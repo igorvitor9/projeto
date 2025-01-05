@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #maior{
+            
+            background-color: purple;
+            background-image: url('IMAGENS/target001.png');
+            background-size: 100% 100%;
+            position: relative;   /*por padrao já é assim. */
+            height: 96vh;
+
+        }
+        #menor{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            background-image: url('IMAGENS/target001.png');
+            background-size: 100% 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="maior">
+            <article id="menor">
+
+            </article>
+        </section>
+    </main>
+</body>
+</html>

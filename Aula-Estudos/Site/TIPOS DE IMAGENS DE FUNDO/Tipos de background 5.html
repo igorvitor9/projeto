@@ -8,21 +8,26 @@
     <style>
        
         body{
-            background-color: black;
+            
            
             height: 100vh;
-            text-align: justify;
+            /* text-align: justify;
             margin: auto;
+            background-color: black;
             background-image: url('IMAGENS/wallpaper002.jpg');
-            background-repeat: no-repeat;
             background-position: center center;
-            background-position: cover;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
 
 
+            /*shorthand - background  color > image > position > repeat > [size] > attachment*/
+            
+            background: black url('IMAGENS/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
         main{
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             width: 400px;
             padding: 10px;
             border-radius: 10px;

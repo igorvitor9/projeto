@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam inventore fugiat sed quaerat, magnam, ut, quia qui debitis ullam possimus repellat vitae eius. Laboriosam natus dignissimos soluta vero illo! Consequuntur!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex magnam ipsam pariatur totam neque consequatur, natus esse, repudiandae at doloribus consectetur odit officia iusto iste corrupti quisquam reiciendis nihil. Consectetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro sed eius commodi in labore eligendi illum blanditiis nemo facere a possimus ea amet molestias, aliquam nostrum cum, quidem adipisci! Animi?</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic sit necessitatibus? Reiciendis praesentium itaque soluta doloremque, ipsum perspiciatis repellat ea ex maxime natus debitis eveniet, unde totam eaque voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis necessitatibus eos soluta. Voluptatem repudiandae ut accusantium quisquam blanditiis quae culpa numquam aperiam labore, error nobis impedit odit consequuntur voluptatibus minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit non aspernatur facere fugit deleniti odio possimus aut necessitatibus. Deleniti blanditiis pariatur magnam consequatur quibusdam ad molestiae minima non ullam.lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut repudiandae sed, at voluptatum cum, assumenda nesciunt, qui tempore nulla deserunt? Unde excepturi labore neque atque reprehenderit optio, numquam vel.</p>
+
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro repellat exercitationem nam veniam, quasi obcaecati natus non laboriosam repellendus voluptatum debitis dolorum fugit aliquam. Veritatis ipsam molestiae dignissimos autem doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto culpa natus corrupti quos autem veritatis impedit cupiditate temporibus, molestiae, eaque libero repellat. Soluta molestias mollitia tempore laudantium necessitatibus expedita ea! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam sapiente, inventore dolorem reprehenderit vitae in, qui quo, obcaecati voluptates quasi! Ut tempore iste voluptatem quidem, dicta qui recusandae quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae natus ipsam voluptatibus voluptate iusto ab dicta doloremque? Ad unde sit numquam eius dignissimos harum animi nulla architecto doloremque. Laudantium, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptas dolores quaerat delectus dolor provident ipsa ullam optio impedit voluptates totam natus quidem fuga aperiam, omnis minus iusto. Eius, voluptate.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

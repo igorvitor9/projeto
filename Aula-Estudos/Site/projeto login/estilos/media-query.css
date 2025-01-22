@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    section#login {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+    }
+    section#login > div#imagem {
+        width: 30%;
+        height: auto; /* Ajusta dinamicamente */
+        background-position: center top;
+    }
+    section#login > div#formulario {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    form  input {
+        border-radius: 10px;
+        
+        padding: 5px;
+        background-color: #ebe4c3;
+        width: calc(100% - 40px);
+        height: 30px;
+        border-radius: 20px;
+        transform: translate(0px, -3px );
+      }
+      form > div.campo {
+        background-color: #5f2c82;
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 0px 0px 0px 1px;
+     
+      }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    section#login {
+        width: 950px;
+        display: flex; /* Alinha elementos lado a lado */
+        flex-direction: row; /* Garantir alinhamento horizontal */
+    }
+    section#login > div#imagem {
+        width: 50%;
+        height: 100%;
+        background-position: center;
+    }
+    section#login > div#formulario {
+        width: 50%;
+        padding: 20px; /* Adiciona espaçamento interno */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centraliza o conteúdo verticalmente */
+    }
+    form > div {
+        margin-bottom: 1px; /* Adiciona espaçamento entre os campos */
+    }
+    form > div > input[type="submit"],
+    form > div > a.botao {
+        width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+        box-sizing: border-box; /* Evita problemas com padding */
+    }
+    form  input {
+        border-radius: 10px;
+        
+        padding: 5px;
+        background-color: #ebe4c3;
+        width: 380px;
+        height: 30px;
+        border-radius: 20px;
+        transform: translate(0px, -3px );
+      }
+}

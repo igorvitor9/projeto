@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação de Velocidade e Nacionalidade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        div {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Captura a nacionalidade
+        let pais = prompt("Qual é o seu país de origem?").toLowerCase();
+        let nacionalidade = "";
+        
+        // Determina a nacionalidade
+        switch(pais) {
+            case "brasil":
+                nacionalidade = "brasileira";
+                break;
+            case "portugal":
+                nacionalidade = "portuguesa";
+                break;
+            case "argentina":
+                nacionalidade = "argentina";
+                break;
+            case "eua":
+            case "estados unidos":
+                nacionalidade = "norte-americana";
+                break;
+            default:
+                nacionalidade = "estrangeira";
+        }
+
+        // Captura e verifica a velocidade
+        let vel = parseFloat(prompt("Digite a velocidade do veículo (km/h):"));
+        
+        // Exibe os resultados na página
+        document.write(`
+            <div>
+                <h2>Resultados:</h2>
+                <p>Sua nacionalidade: ${nacionalidade.charAt(0).toUpperCase() + nacionalidade.slice(1)}</p>
+                <p>Sua velocidade: ${vel} km/h</p>
+        `);
+
+        if(vel > 12) {
+            document.write(`
+                <p style="color: red;">Você ultrapassou o limite de 12 km/h! Multa aplicada!</p>
+            `);
+        } else {
+            document.write(`
+                <p style="color: green;">Velocidade dentro do limite permitido</p>
+            `);
+        }
+
+        document.write(`
+                <p>Dirija sempre com cinto de segurança!</p>
+            </div>
+        `);
+    </script>
+</body>
+</html>

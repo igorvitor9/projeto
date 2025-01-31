@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArteMágica - Seu Caminho na Arte</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(120deg, #ff6f61, #ff9a8b);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .black-banner {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+        }
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff6f61;
+            color: white;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .course-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .course-card:hover {
+            transform: translateY(-10px);
+        }
+        .course-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .course-card h3 {
+            font-size: 1.5em;
+            margin: 15px;
+        }
+        .course-card p {
+            margin: 0 15px 15px;
+            font-size: 1em;
+            color: #666;
+        }
+        .course-card button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .course-card button:hover {
+            background-color: #ff9a8b;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .hero h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ArteMágica</h1>
+        <p>Desperte o Artista Dentro de Você</p>
+        <div class="black-banner">
+            Transforme sua Paixão por Arte em Habilidade Profissional
+        </div>
+    </header>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <section class="hero">
+        <h2>Aprenda a Criar Obras Incríveis com Nossos Cursos Online</h2>
+    </section>
+    <section id="cursos" class="courses">
+        <div class="course-card">
+            <img src="https://via.placeholder.com/300x200" alt="Curso de Pintura">
+            <h3>Pintura para Iniciantes</h3>
+            <p>Aprenda as técnicas básicas de pintura e libere sua criatividade.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="course-card">
+            <img src="https://via.placeholder.com/300x200" alt="Curso de Desenho">
+            <h3>Desenho Realista</h3>
+            <p>Domine o desenho realista com técnicas passo a passo.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="course-card">
+            <img src="https://via.placeholder.com/300x200" alt="Curso de Escultura">
+            <h3>Escultura em Argila</h3>
+            <p>Crie esculturas impressionantes com nossas aulas práticas.</p>
+            <button>Comprar Agora</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 ArteMágica. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
